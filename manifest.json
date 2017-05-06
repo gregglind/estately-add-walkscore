@@ -1,0 +1,16 @@
+{
+  "description": "Add walkscore to estately",
+  "manifest_version": 2,
+  "name": "estately-add-walkscore",
+  "author": "Gregg Lind <gregg.lind@gmail.com>",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["*://*.estately.com/*"],
+      "js": ["addWalkscore.js"]
+    }
+  ],
+  "permissions": [
+    "storage"
+  ]
+}
